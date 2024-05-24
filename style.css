@@ -1,16 +1,16 @@
 :root{
-    --branco-principal: #FFFFFF;
-    --cinza-secundario: #c0c0c0; 
-    --botao-azul: #167bf7; 
-    --cor-de-fundo: #00030c; 
+    --branco-principal:#FFFFFF;
+    --cinza-secundario:#C0C0C0;
+    --botao-roxo:#8b6ab3;
+    --cor-de-fundo:#00030C;
 }
 *{
     margin: 0;
     padding: 0;
 }
 body{
-    background-color:var(--cor-de-fundo)
-    color(--cinza-secundario)
+    background-color:var(--cor-de-fundo);
+    color: var(--branco-principal);
 }
 .principal{
     background-image: url("img/Background.png");
@@ -18,5 +18,13 @@ body{
     background-size: contain;
 }
 .container{
-   height: 100% vh; 
+    height: 100vh;
+    display: grid;
+}
+.container-botao{
+    background-color: var(--botao-roxo);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
 }
